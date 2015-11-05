@@ -140,3 +140,6 @@ PRODUCT_PACKAGES += \
 # IRSC
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sec_config:system/etc/sec_config
+
+# Common Qualcomm
+$(call inherit-product, device/samsung/qcom-common/qcom-common.mk)
