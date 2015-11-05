@@ -151,5 +151,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/synaptics_dsx.kl:system/usr/keylayout/synaptics_dsx.kl \
     $(LOCAL_PATH)/keylayout/synaptics_rmi4_i2c.kl:system/usr/keylayout/synaptics_rmi4_i2c.kl
 
+# Audio configuration
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/audio/audio_effects.conf:system/vendor/etc/audio_effects.conf
+
 # Common Qualcomm
 $(call inherit-product, device/samsung/qcom-common/qcom-common.mk)
