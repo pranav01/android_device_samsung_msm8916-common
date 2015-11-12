@@ -129,5 +129,7 @@ WLAN_MODULES:
 	mv $(KERNEL_MODULES_OUT)/wlan.ko $(KERNEL_MODULES_OUT)/pronto/pronto_wlan.ko
 	ln -sf /system/lib/modules/pronto/pronto_wlan.ko $(TARGET_OUT)/lib/modules/wlan.ko
 
+TARGET_KERNEL_MODULES += WLAN_MODULES
+
 # CMHW
 BOARD_HARDWARE_CLASS += $(VENDOR_PATH)/cmhw
