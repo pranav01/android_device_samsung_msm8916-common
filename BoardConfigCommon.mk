@@ -133,3 +133,15 @@ TARGET_KERNEL_MODULES += WLAN_MODULES
 
 # CMHW
 BOARD_HARDWARE_CLASS += $(VENDOR_PATH)/cmhw
+
+# SELinux
+include device/qcom/sepolicy/sepolicy.mk
+
+BOARD_SEPOLICY_DIRS += \
+    device/samsung/msm8916-common/sepolicy
+
+BOARD_SEPOLICY_UNION += \
+    vold.te \
+    file.te \
+    wcnss_service.te \
+    file_contexts
