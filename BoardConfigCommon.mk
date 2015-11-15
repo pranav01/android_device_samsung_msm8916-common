@@ -145,3 +145,6 @@ BOARD_SEPOLICY_UNION += \
     file.te \
     wcnss_service.te \
     file_contexts
+
+# Workaround to avoid issues with legacy liblights on QCOM platforms
+TARGET_PROVIDES_LIBLIGHT := true
