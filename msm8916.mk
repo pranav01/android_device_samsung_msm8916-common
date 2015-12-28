@@ -37,7 +37,7 @@ PRODUCT_COPY_FILES += \
 
 # USB 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    persist.sys.usb.config=mtp,adb
+    persist.sys.usb.config=mtp
 
 PRODUCT_PACKAGES += \
     com.android.future.usb.accessory
